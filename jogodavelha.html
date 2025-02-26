@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 5px;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: none;
+            font-size: 48px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .cell:hover {
+            background-color: #eee;
+        }
+        
+        .status {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .mode-select {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <div class="mode-select">
+        <button class="button" id="pvpButton">Jogador vs Jogador</button>
+        <button class="button" id="pvcButton">Jogador vs Computador</button>
+    </div>
+    <div class="status" id="status">Selecione o modo de jogo</div>
+    <div class="board" id="board">
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+    </div>
+    <button class="button" id="restartButton">Reiniciar Jogo</button>
+    <script src="jogodavelha.js"></script>
+</body>
+</html>

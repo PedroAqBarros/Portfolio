@@ -54,7 +54,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     projetos.forEach(projeto => {
-        projeto.addEventListener("click", function () {
+        projeto.addEventListener("click", function (e) {
+            // Don't close if clicking game elements
+            if (e.target.matches('.cell, .button, #game-container, .board')) {
+                return;
+            }
+            
             const detalhes = this.querySelector(".detalhes");
             if (detalhes.style.display === "block") {
                 detalhes.style.display = "none";

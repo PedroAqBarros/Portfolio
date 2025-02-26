@@ -33,37 +33,6 @@
                 <div onmouseenter="proj1()" class="projeto">
                     <h3>Design</h3>
                     <p class="descricao">Descrição do projeto 1.</p>
-                    <div class="detalhes">
-                        <p>Esses são os detalhes do projeto 1...</p>
-                        <select id="projeto-selector">
-                            <option value="">Selecione um projeto</option>
-                            <option value="jogo-velha">Jogo da Velha com Python</option>
-                            <option value="contador-py">Contador em Python</option>
-                            <option value="contador-js">Contador em JavaScript</option>
-                        </select>
-                                                  <div class="projeto-content" id="jogo-velha">
-                                                      <a href="https://github.com/seu-usuario/jogo-da-velha" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
-                                                      <br>
-                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mpAnsf12JkA?si=1mwys5c7maZuBqfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                                  </div>
-                        <div class="projeto-content" id="contador-py">
-                            <a href="https://github.com/seu-usuario/contador-python" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
-                            <br>
-                            <video width="320" height="240" controls>
-                                <source src="caminho/para/contador-py.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-
-                        <div class="projeto-content" id="contador-js">
-                            <a href="https://github.com/seu-usuario/contador-js" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
-                            <br>
-                            <video width="320" height="240" controls>
-                                <source src="caminho/para/contador-js.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -72,6 +41,35 @@
                 <p class="descricao">Descrição do projeto 2.</p>
                 <div class="detalhes">
                     <p>Esses são os detalhes do projeto 2...</p>
+                    <select id="projeto-selector">
+                        <option value="">Selecione um projeto</option>
+                        <option value="jogo-velha">Jogo da Velha com JS e HTML/option>
+                    </select>
+                      <div class="projeto-content" id="jogo-velha">
+                          <a href="https://github.com/seu-usuario/jogo-da-velha" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
+                          <br>
+                          <div id="game-container">
+                              <div class="mode-select">
+                                  <button class="button" id="pvpButton">Jogador vs Jogador</button>
+                                  <button class="button" id="pvcButton">Jogador vs Computador</button>
+                              </div>
+                              <div class="status" id="status">Selecione o modo de jogo</div>
+                              <div class="board" id="board">
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                                  <button class="cell" data-cell></button>
+                              </div>
+                              <button class="button" id="restartButton">Reiniciar Jogo</button>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
                 </div>
 
             </div>
@@ -99,3 +97,5 @@
 </footer>
 
 </html>
+
+<script src="jogodavelha.js"></script>

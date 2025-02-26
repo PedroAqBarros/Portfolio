@@ -75,12 +75,20 @@ p#links img {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
   }
 
-  .projeto-content video {
+  .projeto-content iframe {
       width: 90%;
-      height: auto;
-      margin: 20px 0;
+      height: 315px;
+      margin: 20px auto;
+      display: block;
+  }
+
+  .projeto-content a {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
   }
 
   .detalhes {
@@ -147,4 +155,78 @@ p#links img {
 #projeto-selector option {
     background-color: #242424;
     color: white;
+}
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.mode-select {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.status {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 5px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#restartButton {
+    margin-top: 15px;
+}
+
+.projeto-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }

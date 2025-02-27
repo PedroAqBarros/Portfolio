@@ -13,6 +13,9 @@ body {
 section{
     margin-bottom: auto;
 }
+span {
+    color: white;
+}
 header {
     margin-top: 20px; /* Ajuste esse valor conforme necessário */
     margin-bottom: 5px;
@@ -38,6 +41,13 @@ nav ul li a {
     font-weight: bold;
 }
 
+p#links img {
+    background-color: #575757;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 100%;
+}
+
 .projetos-container {
     display: flex;
     flex-direction: column;
@@ -59,4 +69,31 @@ nav ul li a {
 }
 .projeto:hover {
     background-color: #575757;
+}
+/* Tema Claro */
+.light-mode {
+    background-color: #f5f5dc;
+    color: #121212;
+}
+
+/* Tema Escuro */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Estilo do botão */
+#theme-toggle {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #242424;
+    color: white;
+    font-weight: bold;
+}
+
+.light-mode #theme-toggle {
+    background-color: #ddd;
+    color: #121212;
 }

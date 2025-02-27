@@ -54,22 +54,60 @@ p#links img {
     align-items: center;
     justify-content: center;
 }
+  .projeto {
+      background-color: #1e1e1e;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      width: 80vw;
+      max-width: 800px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  .projeto h3, .projeto p {
+      color: white;
+  }
+  .projeto:hover {
+      background-color: #575757;
+  }
+  .projeto-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
-.projeto {
-    background-color: #1e1e1e;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    width: 300px;
-    cursor: pointer;
-    transition: 0.3s;
+  .projeto-content video {
+      width: 90%;
+      height: auto;
+      margin: 20px 0;
+  }
+
+  .detalhes {
+      display: none; /* Inicialmente oculto */
+      margin-top: 10px;
+      padding: 20px;
+      background-color: #2a2a2a;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+      min-height: 100px;
+  }
+  .projeto-content iframe {
+    width: 90%;
+    height: 315px;
+    margin: 20px 0;
 }
-.projeto h3, .projeto p {
-    color: white;
-}
-.projeto:hover {
-    background-color: #575757;
-}
+
+  .projeto-content {
+      transition: all 0.3s ease;
+  }
+
+  .projeto-content.active {
+      min-height: 400px;
+      padding: 15px;
+  }
 /* Tema Claro */
 .light-mode {
     background-color: #f5f5dc;
@@ -81,7 +119,6 @@ p#links img {
     background-color: #121212;
     color: white;
 }
-
 /* Estilo do botão */
 #theme-toggle {
     cursor: pointer;
@@ -96,4 +133,18 @@ p#links img {
 .light-mode #theme-toggle {
     background-color: #ddd;
     color: #121212;
+}
+
+#projeto-selector {
+    background-color: #242424;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #575757;
+    cursor: pointer;
+}
+
+#projeto-selector option {
+    background-color: #242424;
+    color: white;
 }

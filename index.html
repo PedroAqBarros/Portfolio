@@ -10,13 +10,13 @@
 
 <body>
     <header>
-        
+
         <nav>
             <ul>
                 <li><a href="sobre.html">Sobre Mim</a></li>
             </ul>
         </nav>
-        
+
     </header>
     <button id="theme-toggle">🌙 Modo Escuro</button>
     <section>
@@ -32,12 +32,46 @@
             <div class="projetos-container">
                 <div onmouseenter="proj1()" class="projeto">
                     <h3>Design</h3>
-                    <p>Descrição do projeto</p>
-                </div>
+                    <p class="descricao">Descrição do projeto 1.</p>
+                    <div class="detalhes">
+                        <p>Esses são os detalhes do projeto 1...</p>
+                        <select id="projeto-selector">
+                            <option value="">Selecione um projeto</option>
+                            <option value="jogo-velha">Jogo da Velha com Python</option>
+                            <option value="contador-py">Contador em Python</option>
+                            <option value="contador-js">Contador em JavaScript</option>
+                        </select>
+                                                  <div class="projeto-content" id="jogo-velha">
+                                                      <a href="https://github.com/seu-usuario/jogo-da-velha" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
+                                                      <br>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mpAnsf12JkA?si=1mwys5c7maZuBqfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                  </div>
+                        <div class="projeto-content" id="contador-py">
+                            <a href="https://github.com/seu-usuario/contador-python" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
+                            <br>
+                            <video width="320" height="240" controls>
+                                <source src="caminho/para/contador-py.mp4" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </div>
 
-                <div class="projeto" onmouseenter="proj2()">
-                    <h3>DEV</h3>
-                    <p>Descrição do projeto</p>
+                        <div class="projeto-content" id="contador-js">
+                            <a href="https://github.com/seu-usuario/contador-js" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
+                            <br>
+                            <video width="320" height="240" controls>
+                                <source src="caminho/para/contador-js.mp4" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projeto" onmouseenter="proj2()">
+                <h3>DEV</h3>
+                <p class="descricao">Descrição do projeto 2.</p>
+                <div class="detalhes">
+                    <p>Esses são os detalhes do projeto 2...</p>
                 </div>
 
             </div>

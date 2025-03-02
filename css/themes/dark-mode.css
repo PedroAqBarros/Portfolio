@@ -1,0 +1,122 @@
+/* Tema Escuro */
+.dark-mode {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+}
+
+.dark-mode .main-header,
+.dark-mode .section-alt,
+.dark-mode .footer {
+    background-color: var(--dark-background-alt);
+}
+
+.dark-mode .section-title::after {
+    background-color: var(--primary-color);
+}
+
+.dark-mode .project-card,
+.dark-mode .skill-item,
+.dark-mode .contact-item,
+.dark-mode .contact-form,
+.dark-mode .timeline-content {
+    background-color: var(--dark-card);
+    border-color: var(--dark-border);
+    transition: all 0.3s ease;
+}
+
+.dark-mode .nav-links a,
+.dark-mode .hero-title,
+.dark-mode .section-title,
+.dark-mode h3,
+.dark-mode h4 {
+    color: var(--dark-text);
+}
+
+.dark-mode .nav-links a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 8px rgba(0, 163, 255, 0.5);
+}
+
+.dark-mode p {
+    color: #e0e0e0;
+}
+
+.dark-mode .btn-secondary,
+.dark-mode .btn-outline {
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+}
+
+.dark-mode .logo a {
+    color: var(--dark-text);
+}
+
+.dark-mode .skill-category h3 {
+    color: var(--primary-color);
+}
+
+.dark-mode .skill-item h4 {
+    color: var(--dark-text);
+}
+
+/* Botão de tema no modo escuro */
+.dark-mode #theme-toggle {
+    background-color: var(--dark-card);
+    color: var(--primary-color);
+    border: 1px solid rgba(0, 163, 255, 0.3);
+}
+
+.dark-mode #theme-toggle:hover {
+    background-color: rgba(0, 163, 255, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 163, 255, 0.2);
+}
+
+/* Melhorias para o modo escuro */
+.dark-mode .highlight,
+.dark-mode .footer-logo .highlight,
+.dark-mode .timeline-content h4,
+.dark-mode .info-item h3 {
+    color: var(--primary-color);
+    text-shadow: 0 0 8px rgba(0, 163, 255, 0.6);
+}
+
+.dark-mode .section-title::after,
+.dark-mode .timeline-dot {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 12px rgba(0, 163, 255, 0.8);
+}
+
+.dark-mode .project-tech span {
+    background-color: rgba(0, 163, 255, 0.15);
+    color: white;
+}
+
+/* Efeito de glow no modo escuro */
+.dark-mode .skill-item:hover,
+.dark-mode .contact-item:hover,
+.dark-mode .project-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 163, 255, 0.15);
+    border-color: rgba(0, 163, 255, 0.3);
+}
+
+.dark-mode .social-links a:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+    box-shadow: 0 0 15px rgba(0, 163, 255, 0.6);
+}
+
+.dark-mode .project-card:hover {
+    box-shadow: 0 12px 25px rgba(0, 163, 255, 0.2);
+    transform: translateY(-6px);
+}
+
+.dark-mode .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 163, 255, 0.25);
+    background-color: rgba(0, 163, 255, 0.05);
+} 

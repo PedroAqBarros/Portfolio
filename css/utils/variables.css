@@ -1,0 +1,23 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: #00A3FF;
+    --primary-dark: #0077CC;
+    --secondary-color: #00E0FF;
+    --text-color: #333333;
+    --text-light: #666666;
+    --text-dark: #111111;
+    --background: #f8f9fa;
+    --background-alt: #ffffff;
+    --border-color: #e0e0e0;
+    --success-color: #38b000;
+    --error-color: #d90429;
+    
+    /* Variáveis para modo escuro */
+    --dark-background: #0A0A0A;
+    --dark-background-alt: #151515;
+    --dark-text: #FFFFFF;
+    --dark-text-light: #CCCCCC;
+    --dark-border: #252525;
+    --dark-card: #1A1A1A;
+    --dark-hover: #2A2A2A;
+} 

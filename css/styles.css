@@ -1,0 +1,25 @@
+/* Main CSS File */
+
+/* Importing utility styles */
+@import url('utils/variables.css');
+@import url('utils/base.css');
+@import url('utils/animations.css');
+@import url('utils/responsive.css');
+
+/* Importing theme styles */
+@import url('themes/dark-mode.css');
+
+/* Importing layout styles */
+@import url('layout/header.css');
+@import url('layout/footer.css');
+@import url('layout/hero.css');
+
+/* Importing component styles */
+@import url('components/buttons.css');
+@import url('components/timeline.css');
+@import url('components/skills.css');
+@import url('components/projects.css');
+@import url('components/contact.css');
+
+/* Importing page-specific styles */
+@import url('pages/about.css'); 

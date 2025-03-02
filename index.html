@@ -4,98 +4,383 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pedro Aquino | Iniciante em Desenvolvimento de Software</title>
+    <meta name="description" content="Portfolio de Pedro Aquino - Iniciante em programação com foco em soluções e automação">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-
-        <nav>
-            <ul>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-            </ul>
-        </nav>
-
-    </header>
     <button id="theme-toggle">🌙 Modo Escuro</button>
-    <section>
-
-        <header>
-            <h1> <span id="typing"></span></h1>
-        </header>
-
-        <section>
-
-            <h2>Meus Projetos</h2>
-
-            <div class="projetos-container">
-                <div onmouseenter="proj1()" class="projeto">
-                    <h3>Design</h3>
-                    <p class="descricao">Descrição do projeto 1.</p>
+    
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">Pedro<span class="highlight">Aquino</span></a>
                 </div>
-            </div>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-            <div class="projeto" onmouseenter="proj2()">
-                <h3>DEV</h3>
-                <p class="descricao">Descrição do projeto 2.</p>
-                <div class="detalhes">
-                    <p>Esses são os detalhes do projeto 2...</p>
-                    <select id="projeto-selector">
-                        <option value="">Selecione um projeto</option>
-                        <option value="jogo-velha">Jogo da Velha com JS e HTML/option>
-                    </select>
-                      <div class="projeto-content" id="jogo-velha">
-                          <a href="https://github.com/seu-usuario/jogo-da-velha" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
-                          <br>
-                          <div id="game-container">
-                              <div class="mode-select">
-                                  <button class="button" id="pvpButton">Jogador vs Jogador</button>
-                                  <button class="button" id="pvcButton">Jogador vs Computador</button>
-                              </div>
-                              <div class="status" id="status">Selecione o modo de jogo</div>
-                              <div class="board" id="board">
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                                  <button class="cell" data-cell></button>
-                              </div>
-                              <button class="button" id="restartButton">Reiniciar Jogo</button>
-                          </div>
-                      </div>
-                    </div>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Pedro<span class="highlight">Aquino</span></h1>
+                    <p class="hero-subtitle">Estudante de Engenharia Mecânica & Entusiasta de Mecatrônica</p>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
                     </div>
                 </div>
-
             </div>
-
         </section>
 
-    </section>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Olá, sou Pedro Aquino, tenho um percurso profissional diversificado que começou na área industrial como ajudante de serralheria e mecânico industrial. Ao longo do tempo, desenvolvi habilidades em design gráfico, com especialização em Photoshop e efeitos visuais, trabalhando em diversos projetos como freelancer.</p>
+                        <p>Atualmente, estou cursando Engenharia Mecânica na UFBRA desde 2024, onde minha paixão pela programação foi despertada ao observar como meu tio utilizava Arduino em projetos de mecatrônica. Em janeiro de 2025, comecei a estudar programação, explorando o fascinante mundo do desenvolvimento de software, com foco em criar soluções que integrem mecânica e automação.</p>
+                        <p>Busco continuamente aprender novas tecnologias e metodologias, combinando minha experiência prática na indústria com conhecimentos de design e programação para criar soluções inovadoras. Estou entusiasmado com as possibilidades que a integração dessas áreas pode proporcionar.</p>
+                        <div class="about-buttons">
+                            <a href="#" class="btn btn-outline">Download CV</a>
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <h3>Educação</h3>
+                            <p>Estudante de Engenharia Mecânica - UFBRA</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Localização</h3>
+                            <p>Brasil, Aparecida de Goiânia, Goiás</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Idiomas</h3>
+                            <p>Português (Nativo), Inglês (Avançado)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Minhas Habilidades</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Linguagens em Aprendizado</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <h4>Python (Básico)</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <h4>HTML</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <h4>CSS</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <h4>JavaScript (Iniciante)</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Ferramentas & Conhecimentos</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-github"></i>
+                                <h4>Git Básico</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal"></i>
+                                <h4>Linha de Comando</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-image"></i>
+                                <h4>Photoshop</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-drafting-compass"></i>
+                                <h4>Serralheria</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cogs"></i>
+                                <h4>Mecânica Industrial</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Áreas de Interesse</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                <h4>Automação</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-microchip"></i>
+                                <h4>Arduino & Mecatrônica</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-industry"></i>
+                                <h4>Engenharia Mecânica</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <h4>Desenvolvimento de APIs</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Habilidades Complementares</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-tasks"></i>
+                                <h4>Organização</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Resolução de Problemas</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-book"></i>
+                                <h4>Aprendizado Contínuo</h4>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-pen-fancy"></i>
+                                <h4>Design Gráfico</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Projeto Calculadora">
+                        </div>
+                        <div class="project-info">
+                            <h3>Calculadora em JavaScript</h3>
+                            <p>Projeto de estudo desenvolvido para praticar lógica de programação e manipulação do DOM em JavaScript, criando uma calculadora com as quatro operações básicas e interface responsiva.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm">Demo</a>
+                                <a href="https://github.com/PedroAqBarros" target="_blank" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Página Pessoal">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Pessoal</h3>
+                            <p>Desenvolvimento deste site portfolio como projeto prático para aprender HTML, CSS e JavaScript, aplicando conceitos de responsividade, animações e boas práticas de design.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm">Site Atual</a>
+                                <a href="https://github.com/PedroAqBarros" target="_blank" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Lista de Tarefas">
+                        </div>
+                        <div class="project-info">
+                            <h3>Lista de Tarefas</h3>
+                            <p>Aplicação simples de controle de tarefas (To-Do List) criada como exercício de manipulação de dados no navegador, permitindo adicionar, marcar como concluído e excluir tarefas.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Local Storage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm">Demo</a>
+                                <a href="https://github.com/PedroAqBarros" target="_blank" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Experiência & Formação</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 - Presente</div>
+                        <div class="timeline-content">
+                            <h3>Estudante de Programação</h3>
+                            <h4>Autodidata & Plataformas Online</h4>
+                            <p>Aprendendo os fundamentos de programação através de cursos online, documentação oficial e projetos práticos. Foco em HTML, CSS e JavaScript para desenvolvimento web e iniciando estudos em Python para automação.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>Estudante de Engenharia Mecânica</h3>
+                            <h4>UFBRA</h4>
+                            <p>Iniciando os estudos em Engenharia Mecânica, com interesse nas áreas de automação e mecatrônica. Foi na universidade que minha paixão por programação foi despertada, ao observar os projetos do meu tio usando Arduino e outras tecnologias para projetos de mecatrônica.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h3>Designer Gráfico</h3>
+                            <h4>Freelancer</h4>
+                            <p>Trabalhei com design gráfico, desenvolvendo habilidades com ferramentas de edição de imagem, especialmente Photoshop. Experiência com criação de efeitos visuais e design para diversos clientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2021</div>
+                        <div class="timeline-content">
+                            <h3>Mecânico Industrial & Ajudante de Serralheria</h3>
+                            <h4>Empresa Industrial</h4>
+                            <p>Iniciei minha carreira profissional como ajudante de serralheria e mecânico industrial, desenvolvendo habilidades práticas em fabricação e manutenção de estruturas metálicas e equipamentos industriais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>contato@pedroaquino.dev</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Localização</h3>
+                            <p>São Paulo, Brasil</p>
+                        </div>
+                        <div class="contact-social">
+                            <h3>Me encontre nas redes</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/PedroAqBarros" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://br.linkedin.com/in/pedro-aquino-barros-104478350/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="project-type">Motivo do Contato</label>
+                                <select id="project-type" name="project-type">
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="collaboration">Colaboração em Projetos</option>
+                                    <option value="mentorship">Mentoria/Dicas de Estudo</option>
+                                    <option value="feedback">Feedback sobre Portfolio</option>
+                                    <option value="opportunity">Oportunidades de Aprendizado</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Pedro<span class="highlight">Aquino</span></h3>
+                    <p class="tagline">Aprendendo a transformar ideias em código</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#experiencia">Experiência</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/PedroAqBarros" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://br.linkedin.com/in/pedro-aquino-barros-104478350/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pedro Aquino. Desenvolvedor em formação.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="typed.js"></script>
     <script src="script.js"></script>
-
 </body>
 
-<footer>
-
-    <p id="links">
-        <a href="https://github.com/PedroAqBarros" target="_blank"><img src="icons8-github-30.png" alt="github"></a>
-        <a href="https://br.linkedin.com/in/pedroaqui" target="_blank"><img src="icons8-linkedin-30.png"
-                alt="linkedin"></a>
-        <a href="https://www.instagram.com/pkziinn/" target="_blank"><img src="icons8-instagram-30.png"
-                alt="instagram"></a>
-    </p>
-
-</footer>
-
 </html>
-
-<script src="jogodavelha.js"></script>

@@ -1,0 +1,136 @@
+/* Responsive */
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: var(--background-alt);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        z-index: 99;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .dark-mode .nav-links {
+        background-color: var(--dark-card);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-dot {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 70px;
+    }
+    
+    .timeline-date {
+        width: auto;
+        position: relative;
+        margin-bottom: 10px;
+        text-align: left;
+        left: 0;
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+    
+    .dark-mode .timeline-date {
+        display: inline-block;
+        margin-bottom: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-links, .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .contact-info {
+        gap: 15px;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+} 

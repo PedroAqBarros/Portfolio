@@ -16,40 +16,32 @@ function mout() {
     
     window.currentTyped = new Typed("#typing", {
         strings: [
-            `${saudacao}`
+            `${saudacao}`,
+            "Me chamo Pedro Aquino",
+            "Estudante de Programação",
+            "Aprendendo Desenvolvimento Web",
+            "Entusiasta de Tecnologia",
+            "Em busca de conhecimento"
         ],
-        typeSpeed: 50, // Velocidade de digitação em milissegundos
-        showCursor: true, // Mostra o cursor piscando
-        cursorChar: '|' // Caractere usado como cursor
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        startDelay: 500,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
     });
 }
-  window.onload = mout()
-  function proj1() {
-      if (window.currentTyped) {
-          window.currentTyped.destroy();
-      }
-      window.currentTyped = new Typed("#typing", {
-          strings: [
-              `Esses são meus projetos <br> de design gráfico.`
-          ],
-          typeSpeed: 50,
-          showCursor: true,
-          cursorChar: '|',
-          onComplete: function() {
-              setTimeout(() => {
-                  window.currentTyped.destroy();
-                  mout();
-              }, 1500);
-          }
-      });
-  }
-  function proj2() {
+
+window.onload = mout;
+
+function proj1() {
     if (window.currentTyped) {
         window.currentTyped.destroy();
     }
     window.currentTyped = new Typed("#typing", {
         strings: [
-            `Esses são meus projetos <br> como desenvolvedor.`
+            `Projeto de estudo em JavaScript.<br>Praticando lógica de programação e DOM.`
         ],
         typeSpeed: 50,
         showCursor: true,
@@ -58,7 +50,27 @@ function mout() {
             setTimeout(() => {
                 window.currentTyped.destroy();
                 mout();
-            }, 1500);
+            }, 3000);
+        }
+    });
+}
+
+function proj2() {
+    if (window.currentTyped) {
+        window.currentTyped.destroy();
+    }
+    window.currentTyped = new Typed("#typing", {
+        strings: [
+            `Aprender fazendo é o melhor caminho.<br>Este portfolio é parte da minha jornada.`
+        ],
+        typeSpeed: 50,
+        showCursor: true,
+        cursorChar: '|',
+        onComplete: function() {
+            setTimeout(() => {
+                window.currentTyped.destroy();
+                mout();
+            }, 3000);
         }
     });
 }

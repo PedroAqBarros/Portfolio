@@ -1,3 +1,22 @@
+/* Base styles for all screen sizes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Mobile-first responsive design */
 @media screen and (max-width: 768px) {
     /* Navigation adjustments */
@@ -27,6 +46,8 @@
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust text sizes */
@@ -43,6 +64,90 @@
     /* Adjust spacing */
     section {
         padding: 2rem 1rem;
+    }
+
+    /* Header and navigation */
+    .header {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Icons and social media links */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .social-icons a {
+        margin: 0.5rem;
+    }
+
+    /* Projects and cards */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Text content */
+    p, h1, h2, h3, h4, h5, h6 {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    /* Buttons and interactive elements */
+    button, .btn {
+        width: auto;
+        max-width: 100%;
+        margin: 0.5rem auto;
+        display: block;
+    }
+
+    /* Skills section */
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .skill-item {
+        text-align: center;
+        width: calc(50% - 1rem);
+        margin: 0;
+    }
+
+    /* Contact form */
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .skill-item {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 }
 

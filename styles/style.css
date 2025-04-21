@@ -1,0 +1,60 @@
+/* Mobile-first responsive design */
+@media screen and (max-width: 768px) {
+    /* Navigation adjustments */
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* Content adjustments */
+    .container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust text sizes */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    p { font-size: 1rem; }
+
+    /* Stack grid items */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Adjust spacing */
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Touch-friendly elements */
+button, 
+a {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}

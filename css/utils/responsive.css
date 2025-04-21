@@ -89,19 +89,19 @@
         text-align: left;
         left: 0;
         display: inline-block;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 3px 10px;
-        border-radius: 4px;
+        background-color: transparent;
+        color: white !important;
+        padding: 3px 0;
+        border-radius: 0;
     }
     
     .dark-mode .timeline-date {
         display: inline-block;
         margin-bottom: 15px;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 3px 10px;
-        border-radius: 4px;
+        background-color: transparent;
+        color: white !important;
+        padding: 3px 0;
+        border-radius: 0;
     }
     
     .footer-content {

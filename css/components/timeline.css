@@ -3,6 +3,7 @@
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+    padding-left: 50px;
 }
 
 .timeline::before {
@@ -11,71 +12,127 @@
     height: 100%;
     width: 3px;
     background-color: var(--primary-color);
-    left: 50px;
+    left: 150px;
     top: 0;
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 60px;
-    padding-left: 100px;
+    padding-left: 180px;
 }
 
 .timeline-dot {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: var(--primary-color);
-    border: 4px solid white;
-    left: 40px;
-    top: 0;
-}
-
-.dark-mode .timeline-dot {
-    border-color: var(--dark-background);
+    border: 4px solid var(--dark-background);
+    left: 142px;
+    top: 5px;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 163, 255, 0.5);
 }
 
 .timeline-date {
     position: absolute;
-    left: -120px;
+    left: 0;
     top: 0;
-    width: 115px;
-    color: var(--text-dark);
-    font-weight: 700;
-    font-size: 1rem;
-    text-align: center;
-    padding: 3px 0;
+    width: 130px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: right;
+    padding: 3px 15px 3px 0;
+    border-right: 3px solid transparent;
 }
 
 .dark-mode .timeline-date {
-    color: white;
-    font-weight: 700;
+    color: var(--primary-color);
+    font-weight: 600;
     font-size: 1.1rem;
-    padding: 3px 0;
-    text-align: center;
-    width: auto;
-    min-width: 115px;
+    text-shadow: 0 0 6px rgba(0, 163, 255, 0.5);
     letter-spacing: 0.5px;
 }
 
 .timeline-content {
-    background-color: var(--background-alt);
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    background-color: rgba(30, 30, 30, 0.95);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--dark-border);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    width: 20px;
+    height: 2px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 163, 255, 0.5);
 }
 
 .timeline-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-    color: var(--text-dark);
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .timeline-content h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
     margin-bottom: 15px;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgba(0, 163, 255, 0.4);
+}
+
+.timeline-content p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding-left: 0;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        padding-left: 60px;
+    }
+
+    .timeline-dot {
+        left: 22px;
+    }
+
+    .timeline-date {
+        position: relative;
+        left: -45px;
+        top: -5px;
+        width: auto;
+        text-align: left;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .timeline-content::before {
+        display: none;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
 }
 
 /* Melhorias específicas para a seção de Experiência & Formação no modo escuro */

@@ -3,13 +3,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: center;
+    align-items: start;
 }
 
 .about-image-container {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -27,7 +27,7 @@
 .about-text {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
 }
 
 .about-text h3 {
@@ -38,8 +38,73 @@
 
 .about-text p {
     color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.about-text p:first-of-type {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-buttons {
+    margin-top: 10px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    background-color: var(--background-alt);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.about-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-item h3 {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.info-item h3 i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.info-item p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    padding-left: 32px;
+}
+
+/* Dark Mode Styles */
+.dark-mode .about-info {
+    background-color: rgba(30, 30, 30, 0.95);
+    border: 1px solid var(--dark-border);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .about-info:hover {
+    border-color: rgba(0, 163, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 163, 255, 0.15);
 }
 
 .dark-mode .about-text h3 {
@@ -47,5 +112,132 @@
 }
 
 .dark-mode .about-text p {
-    color: var(--dark-text-secondary);
+    color: #e0e0e0;
+}
+
+.dark-mode .info-item h3 {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .info-item h3 i {
+    color: var(--primary-color);
+    text-shadow: 0 0 8px rgba(0, 163, 255, 0.8);
+}
+
+.dark-mode .info-item p {
+    color: #ccc;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-text {
+        order: 1;
+    }
+    
+    .about-info {
+        order: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .info-item {
+        text-align: center;
+    }
+    
+    .info-item h3 {
+        justify-content: center;
+    }
+    
+    .info-item p {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        gap: 15px;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .about-text p:first-of-type {
+        font-size: 1.05rem;
+    }
+    
+    .about-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .info-item {
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-radius: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        border-left: 3px solid var(--primary-color);
+    }
+    
+    .dark-mode .info-item {
+        background-color: rgba(255, 255, 255, 0.03);
+    }
+    
+    .info-item h3 {
+        margin-bottom: 0;
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+    
+    .info-item h3 i {
+        font-size: 1.2rem;
+        width: 25px;
+        text-align: center;
+    }
+    
+    .info-item p {
+        font-size: 0.95rem;
+        padding-left: 0;
+        flex: 1;
+        text-align: right;
+    }
+    
+    .about-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        gap: 20px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 15px;
+    }
+    
+    .info-item h3 {
+        font-size: 1.05rem;
+    }
+    
+    .info-item p {
+        text-align: left;
+        padding-left: 35px;
+    }
 } 

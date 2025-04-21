@@ -46,30 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Theme toggle functionality
-    const toggleButton = document.getElementById("theme-toggle");
-    const body = document.body;
-
-    if (localStorage.getItem("theme") === "light") {
-        body.classList.add("light-mode");
-        toggleButton.textContent = "🌙 Modo Escuro";
-    } else {
-        body.classList.add("dark-mode");
-        toggleButton.textContent = "☀️ Modo Claro";
-    }
-
-    toggleButton.addEventListener("click", function () {
-        if (body.classList.contains("dark-mode")) {
-            body.classList.replace("dark-mode", "light-mode");
-            toggleButton.textContent = "🌙 Modo Escuro";
-            localStorage.setItem("theme", "light");
-        } else {
-            body.classList.replace("light-mode", "dark-mode");
-            toggleButton.textContent = "☀️ Modo Claro";
-            localStorage.setItem("theme", "dark");
-        }
-    });
-
     // Animações ao scroll
     const fadeInElements = document.querySelectorAll('.project-card, .skill-item, .timeline-item, .contact-item');
     

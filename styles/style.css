@@ -14,7 +14,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 /* Mobile-first responsive design */
@@ -39,7 +39,7 @@ body {
     .container {
         width: 95%;
         margin: 0 auto;
-        padding: 0 1rem;
+        padding: 15px;
     }
 
     /* Make images responsive */
@@ -137,6 +137,41 @@ body {
     input, textarea {
         width: 100%;
         max-width: 100%;
+    }
+
+    /* Correção do título duplicado */
+    .header-mobile-title {
+        display: none;
+    }
+
+    /* Centralização e espaçamento do conteúdo principal */
+    .main-content {
+        text-align: center;
+        margin: 2rem auto;
+        width: 90%;
+    }
+
+    /* Ajuste dos botões */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    /* Ajuste do texto descritivo */
+    .description {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        margin: 1rem auto;
+        width: 90%;
     }
 }
 

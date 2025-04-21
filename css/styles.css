@@ -22,4 +22,146 @@
 @import url('components/contact.css');
 
 /* Importing page-specific styles */
-@import url('pages/about.css'); 
+@import url('pages/about.css');
+
+/* Prevenção de scroll horizontal */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Ajustes para container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Ajuste geral de texto */
+p, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Ajuste para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajuste para links e botões */
+a, button {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Ajustes para mobile */
+@media screen and (max-width: 768px) {
+    /* Timeline ajustments */
+    .timeline-item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .timeline-date {
+        position: relative;
+        left: 0;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: var(--highlight-color);
+    }
+
+    .timeline-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* Projects adjustments */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Skills adjustments */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
+    }
+
+    /* Contact adjustments */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    /* Form adjustments */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: var(--bg-color);
+        width: 100%;
+        left: 0;
+        top: -100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        top: 70px;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 15px;
+    }
+}
+
+/* Fix for very small screens */
+@media screen and (max-width: 480px) {
+    .timeline-date {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 0.9rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+}

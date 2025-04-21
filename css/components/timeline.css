@@ -41,19 +41,20 @@
     left: 0;
     top: 0;
     width: 130px;
-    color: var(--primary-color);
+    color: #FFFFFF;
     font-weight: 600;
     font-size: 1.1rem;
     text-align: right;
     padding: 3px 15px 3px 0;
     border-right: 3px solid transparent;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
 
 .dark-mode .timeline-date {
-    color: var(--primary-color);
+    color: #FFFFFF;
     font-weight: 600;
     font-size: 1.1rem;
-    text-shadow: 0 0 6px rgba(0, 163, 255, 0.5);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
     letter-spacing: 0.5px;
 }
 
@@ -130,6 +131,8 @@
         margin-bottom: 10px;
         padding: 0;
         font-size: 1rem;
+        color: #FFFFFF;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
     }
 
     .timeline-content {
